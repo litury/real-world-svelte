@@ -1,13 +1,8 @@
 <script>
-	let count = 0;
+import {startCount} from './utils/couter.js';
 
-	function handleClick() {
-		count += 1;
-	}
+const counter = startCount();
 
 </script>
 
-<button on:click={handleClick}>
-	Clicked {count}
-	{count === 1 ? 'time' : 'times'}
-</button>
+<span>{$counter}</span>
