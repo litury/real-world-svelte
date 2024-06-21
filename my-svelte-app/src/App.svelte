@@ -1,8 +1,5 @@
 <script>
-import {startCount} from './utils/couter.js';
-
-const counter = startCount();
-
+import Counter from './lib/Counter.svelte';
 </script>
 
-<span>{$counter}</span>
+<Counter />
